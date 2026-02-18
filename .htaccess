@@ -1,0 +1,122 @@
+# ============================================================================
+# RAHVEER Certificate - Apache Configuration for GoDaddy Hosting
+# ============================================================================
+# Security and Performance Settings
+# ============================================================================
+
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# ----------------------------------------------------------------------------
+# FORCE HTTPS (Enable after SSL certificate is installed)
+# ----------------------------------------------------------------------------
+# ⚠️ IMPORTANT: Uncomment these lines after SSL is configured in GoDaddy
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# Alternative for some GoDaddy servers (if above doesn't work):
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# ----------------------------------------------------------------------------
+# PROTECT SENSITIVE FILES
+# ----------------------------------------------------------------------------
+# Protect config.php from direct access
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Protect database.sql from direct access
+<Files "database.sql">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Protect test connection file
+<Files "test_connection.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Protect .htaccess and .htpasswd files
+<Files ~ "^\.ht">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Protect README and documentation files (optional)
+<FilesMatch "\.(md|txt)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Disable directory browsing
+Options -Indexes
+
+# Set default index files
+DirectoryIndex index.html index.php
+
+# Enable Gzip Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ----------------------------------------------------------------------------
+# PHP SETTINGS (if supported by hosting)
+# ----------------------------------------------------------------------------
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+    php_flag display_errors Off
+    php_flag log_errors On
+</IfModule>
+
+# ----------------------------------------------------------------------------
+# ADDITIONAL SECURITY
+# ----------------------------------------------------------------------------
+# Disable server signature
+ServerSignature Off
+
+# Prevent access to backup and temp files
+<FilesMatch "\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Block common exploit attempts
+<IfModule mod_rewrite.c>
+    RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+    RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+    RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+    RewriteRule ^(.*)$ - [F,L]
+</IfModule>
+
+# ----------------------------------------------------------------------------
+# ERROR PAGES (Optional - create custom error pages)
+# ----------------------------------------------------------------------------
+# ErrorDocument 404 /404.html
+# ErrorDocument 500 /500.html
+# ErrorDocument 403 /403.html

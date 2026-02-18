@@ -1,0 +1,41 @@
+# RAHVEER Certificate - Git Ignore File
+
+# Uploaded photos
+uploads/*
+!uploads/.htaccess
+
+# Configuration files with sensitive data
+config.php
+
+# Database backups
+*.sql
+!database.sql
+
+# Log files
+*.log
+error_log
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.cache
+
+# PHP files
+.phpunit.cache/

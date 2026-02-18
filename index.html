@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>RAHVEER – Zero Accident Bharat | Driver Safety Pledge Certificate</title>
+  <meta name="title" content="RAHVEER – Zero Accident Bharat | Driver Safety Pledge Certificate">
+  <meta name="description" content="Join the Zero Accident Bharat Mission. Take the driver safety pledge and receive your official certificate. Committed to making Indian roads safer for everyone.">
+  <meta name="keywords" content="Zero Accident Bharat, Road Safety, Driver Safety, RAHVEER, Indian Road Safety, Driver Pledge, Safety Certificate, Accident Prevention">
+  <meta name="author" content="RAHVEER Driver Safety Mission">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RAHVEER – Zero Accident Bharat | Driver Safety Pledge">
+  <meta property="og:description" content="Join thousands of drivers committed to road safety. Take the Zero Accident Bharat pledge and contribute to safer roads for all Indians.">
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="RAHVEER – Zero Accident Bharat">
+  <meta property="twitter:description" content="Join the driver safety mission. Take the pledge for Zero Accident Bharat.">
+  <meta property="twitter:image" content="https://yourdomain.com/twitter-image.jpg">
+  
+  <!-- Favicon (uncomment when you add favicon files) -->
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"> -->
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&amp;family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    .font-mukta {
+      font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    }
+    
+    .font-devanagari {
+      font-family: 'Tiro Devanagari Hindi', serif;
+    }
+    
+    .tricolor-top {
+      background: linear-gradient(to right, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%);
+      height: 6px;
+    }
+    
+    .pledge-box {
+      background: linear-gradient(135deg, #fefefe 0%, #f8f9fa 100%);
+      border: 3px solid #1a365d;
+      position: relative;
+    }
+    
+    .pledge-box::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      bottom: 8px;
+      border: 1px solid #FF9933;
+      pointer-events: none;
+    }
+    
+    .certificate-bg {
+      background: 
+        repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.05),
+          rgba(255, 255, 255, 0.05) 10px,
+          transparent 10px,
+          transparent 20px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          rgba(26, 54, 93, 0.02),
+          rgba(26, 54, 93, 0.02) 10px,
+          transparent 10px,
+          transparent 20px
+        ),
+        radial-gradient(circle at 20% 50%, rgba(255, 153, 51, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(19, 136, 8, 0.03) 0%, transparent 50%),
+        linear-gradient(to bottom, #ffffff 0%, #fafafa 100%);
+      border: 4px double #1a365d;
+      position: relative;
+    }
+    
+    .certificate-bg::before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border: 2px solid #FF9933;
+      pointer-events: none;
+    }
+    
+    .certificate-bg::after {
+      content: '';
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      border: 1px solid #138808;
+      pointer-events: none;
+    }
+    
+    .road-pattern {
+      background-image: 
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 30px,
+          #FFD700 30px,
+          #FFD700 60px
+        );
+      height: 4px;
+      opacity: 0.8;
+    }
+    
+    .seal-emblem {
+      width: 80px;
+      height: 80px;
+      border: 3px solid #1a365d;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e2e8f0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .input-field {
+      border: 2px solid #cbd5e0;
+      transition: all 0.3s ease;
+    }
+    
+    .input-field:focus {
+      border-color: #1a365d;
+      box-shadow: 0 0 0 3px rgba(26, 54, 93, 0.1);
+      outline: none;
+    }
+    
+    .pledge-btn {
+      background: linear-gradient(135deg, #FF9933 0%, #e68a00 100%);
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(255, 153, 51, 0.4);
+    }
+    
+    .pledge-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 153, 51, 0.5);
+    }
+    
+    .ashoka-chakra {
+      animation: spin 30s linear infinite;
+    }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .animate-fade-in {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    .no-print {
+      animation: scaleIn 0.3s ease-out;
+    }
+    
+    .animate-delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .animate-delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .animate-delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .animate-delay-4 { animation-delay: 0.4s; opacity: 0; }
+    
+    .step-section {
+      min-height: 100vh;
+    }
+    
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 10mm;
+      }
+      
+      html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+      }
+      
+      /* Hide everything except certificate */
+      .no-print,
+      button,
+      .no-print *,
+      #success-name {
+        display: none !important;
+        visibility: hidden !important;
+      }
+      
+      #step-1-content,
+      #step-2-content,
+      footer,
+      header,
+      #app-wrapper > div:first-child,
+      .bg-green-100,
+      .congratulations {
+        display: none !important;
+      }
+      
+      /* Show certificate section */
+      #step-3-content {
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: white !important;
+        min-height: auto !important;
+        height: auto !important;
+      }
+      
+      #step-3-content > section {
+        padding: 0 !important;
+        margin: 0 !important;
+        background: white !important;
+      }
+      
+      /* Certificate renders naturally - no forced compression */
+      #certificate-to-print {
+        margin: 0 auto !important;
+        box-shadow: none !important;
+      }
+      
+      .certificate-bg {
+        box-shadow: none !important;
+      }
+      
+      /* Preserve all colors, backgrounds, and styling */
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+      
+      /* Remove animations only */
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+    
+    /* Additional Mobile Responsiveness */
+    @media (max-width: 640px) {
+      .certificate-bg {
+        padding: 1.5rem !important;
+      }
+      
+      .pledge-box {
+        padding: 1.5rem !important;
+      }
+      
+      body {
+        font-size: 14px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .certificate-bg {
+        padding: 1rem !important;
+      }
+      
+      .certificate-bg::before,
+      .certificate-bg::after {
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+      }
+    }
+    
+    /* Ensure images don't overflow on mobile */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Better mobile button sizing */
+    @media (max-width: 640px) {
+      button {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+ </head>
+ <body class="h-full font-mukta bg-white text-gray-800">
+  <div id="app-wrapper" class="w-full h-full overflow-auto"><!-- Progress Indicator (Sticky at top) -->
+   <div class="bg-white py-4 shadow-md sticky top-0 z-50 no-print">
+    <div class="max-w-4xl mx-auto px-4">
+     <div class="flex justify-between items-center">
+      <div class="flex flex-col items-center flex-1">
+       <div id="step1-indicator" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg border-4 border-orange-200 transition-all">
+        1
+       </div>
+       <p id="step1-text" class="text-xs md:text-sm font-semibold text-orange-500 mt-1 text-center">Introduction</p>
+      </div>
+      <div class="w-8 md:w-20 h-1 bg-gray-300 mx-1" id="progress-bar-1"></div>
+      <div class="flex flex-col items-center flex-1">
+       <div id="step2-indicator" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-300 text-gray-500 flex items-center justify-center font-bold text-lg transition-all">
+        2
+       </div>
+       <p id="step2-text" class="text-xs md:text-sm font-semibold text-gray-500 mt-1 text-center">Take Pledge</p>
+      </div>
+      <div class="w-8 md:w-20 h-1 bg-gray-300 mx-1" id="progress-bar-2"></div>
+      <div class="flex flex-col items-center flex-1">
+       <div id="step3-indicator" class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-300 text-gray-500 flex items-center justify-center font-bold text-lg transition-all">
+        3
+       </div>
+       <p id="step3-text" class="text-xs md:text-sm font-semibold text-gray-500 mt-1 text-center">Certificate</p>
+      </div>
+     </div>
+    </div>
+   </div><!-- STEP 1: Introduction -->
+   <div id="step-1-content" class="step-content">
+    <div class="tricolor-top w-full"></div>
+    <header class="bg-gradient-to-b from-slate-50 to-white py-12 md:py-16">
+     <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col items-center text-center">
+       <div class="flex items-center gap-3 mb-6 animate-fade-in">
+        <div class="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
+         <img src="images/Rahveer_logo.jpeg" alt="RAHVEER Logo" class="w-16 h-16 md:w-20 md:h-20 object-contain rounded-lg shadow-lg">
+        </div>
+        <div class="text-left">
+         <h1 class="text-2xl md:text-3xl font-extrabold text-blue-900 tracking-wide">RAHVEER</h1>
+         <p class="text-xs md:text-sm text-gray-600 font-semibold">Driver Safety Mission</p>
+        </div>
+       </div>
+       <h2 id="main-heading" class="text-3xl md:text-5xl font-extrabold text-blue-900 mb-3 animate-fade-in animate-delay-1">Zero Accident Bharat – Driver Safety Pledge</h2>
+       <p id="tagline" class="text-lg md:text-2xl font-devanagari text-gray-700 mb-6 animate-fade-in animate-delay-2">"Ek Sankalp, Surakshit Bharat"</p>
+       <p class="text-base md:text-lg text-gray-600 mb-8 animate-fade-in animate-delay-3">Rahveer ke saath, surakshit safar ka sankalp</p>
+       <div class="flex flex-wrap justify-center gap-6 md:gap-10 animate-fade-in animate-delay-4">
+        <div class="flex flex-col items-center">
+         <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg viewbox="0 0 40 40" class="w-8 h-8"><path d="M5 35 L20 5 L35 35" fill="none" stroke="#1a365d" stroke-width="3" /> <line x1="20" y1="15" x2="20" y2="20" stroke="#FF9933" stroke-width="2" /> <line x1="20" y1="24" x2="20" y2="29" stroke="#FF9933" stroke-width="2" />
+          </svg>
+         </div><span class="text-xs mt-2 text-gray-600">Highway</span>
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-orange-100 flex items-center justify-center">
+          <svg viewbox="0 0 40 40" class="w-8 h-8"><rect x="5" y="15" width="20" height="14" rx="2" fill="#1a365d" /> <rect x="25" y="20" width="10" height="9" rx="1" fill="#1a365d" /> <circle cx="12" cy="32" r="4" fill="#FF9933" /> <circle cx="30" cy="32" r="4" fill="#FF9933" /> <rect x="27" y="22" width="5" height="4" fill="#87CEEB" />
+          </svg>
+         </div><span class="text-xs mt-2 text-gray-600">Truck</span>
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-green-100 flex items-center justify-center">
+          <svg viewbox="0 0 40 40" class="w-8 h-8 ashoka-chakra"><circle cx="20" cy="20" r="14" fill="none" stroke="#138808" stroke-width="3" /> <circle cx="20" cy="20" r="4" fill="#138808" /> <g stroke="#138808" stroke-width="2">
+            <line x1="20" y1="6" x2="20" y2="16" />
+            <line x1="20" y1="24" x2="20" y2="34" />
+            <line x1="6" y1="20" x2="16" y2="20" />
+            <line x1="24" y1="20" x2="34" y2="20" />
+            <line x1="10" y1="10" x2="16" y2="16" />
+            <line x1="24" y1="24" x2="30" y2="30" />
+            <line x1="30" y1="10" x2="24" y2="16" />
+            <line x1="16" y1="24" x2="10" y2="30" />
+           </g>
+          </svg>
+         </div><span class="text-xs mt-2 text-gray-600">Safety</span>
+        </div>
+        <div class="flex flex-col items-center">
+         <div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-100 flex items-center justify-center">
+          <svg viewbox="0 0 40 40" class="w-8 h-8"><path d="M10 25 C10 12 30 12 30 25 L30 28 L10 28 Z" fill="#1a365d" /> <ellipse cx="20" cy="28" rx="12" ry="4" fill="#FF9933" /> <rect x="8" y="26" width="24" height="3" fill="#FF9933" /> <path d="M15 18 Q20 14 25 18" fill="none" stroke="#87CEEB" stroke-width="2" />
+          </svg>
+         </div><span class="text-xs mt-2 text-gray-600">Protection</span>
+        </div>
+       </div>
+      </div>
+     </div>
+    </header>
+    <div class="bg-gray-700 py-2">
+     <div class="road-pattern mx-auto max-w-4xl"></div>
+    </div>
+    <section class="py-16 bg-gradient-to-b from-slate-50 to-white">
+     <div class="max-w-2xl mx-auto px-4 text-center">
+      <div class="bg-white rounded-xl p-8 md:p-12 shadow-2xl">
+       <div class="mb-6">
+        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+         <svg class="w-10 h-10 text-blue-900" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+         </svg>
+        </div>
+       </div>
+       <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Welcome to Zero Accident Bharat Mission</h3>
+       <p class="text-gray-600 mb-3 text-lg">🚗 Join thousands of drivers committed to road safety</p>
+       <p class="text-gray-600 mb-8">Every driver matters. Every pledge counts. Together we can create safer roads for all Indians.</p><button onclick="goToStep(2)" class="pledge-btn w-full py-4 px-8 rounded-xl text-white font-bold text-lg flex items-center justify-center gap-2"> Continue to Pledge 
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg></button>
+      </div>
+     </div>
+    </section>
+    <div class="tricolor-top w-full"></div>
+   </div><!-- STEP 2: Pledge & Form -->
+   <div id="step-2-content" class="step-content hidden">
+    <div class="tricolor-top w-full"></div>
+    <section class="py-10 md:py-16 bg-gradient-to-b from-slate-50 to-white">
+     <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-8">
+       <h3 class="text-2xl md:text-3xl font-bold text-blue-900 mb-2">शपथ / The Pledge</h3>
+       <div class="w-24 h-1 bg-gradient-to-r from-orange-500 via-white to-green-600 mx-auto"></div>
+      </div>
+      <div class="pledge-box rounded-lg p-6 md:p-10 shadow-xl mb-8">
+       <div class="text-center mb-6">
+        <div class="inline-block px-4 py-1 bg-blue-900 text-white text-sm font-semibold rounded-full mb-4">
+         ZERO ACCIDENT BHARAT
+        </div>
+       </div>
+       <div class="font-devanagari text-base md:text-lg leading-relaxed text-gray-800 text-center space-y-4">
+        <p class="text-xl md:text-2xl font-bold text-blue-900 mb-6">"Main, ek zimmedaar driver hone ke naate, yeh pratigya karta/karti hoon ki..."</p>
+        <div class="space-y-3 text-left md:text-center max-w-2xl mx-auto">
+         <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">✓</span> <span>Main hamesha <strong>surakshit driving</strong> karunga/karungi</span></p>
+         <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">✓</span> <span><strong>Speed limit</strong> ka palan karunga/karungi</span></p>
+         <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">✓</span> <span><strong>Sharab ya thakaan</strong> ki sthiti mein driving nahi karunga/karungi</span></p>
+         <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">✓</span> <span><strong>Seat belt aur safety rules</strong> ka palan karunga/karungi</span></p>
+         <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">✓</span> <span>Apni, apne <strong>parivaar aur desh ke nagrikon ki suraksha</strong> ko sabse upar rakhunga/rahungi</span></p>
+        </div>
+        <div class="mt-8 pt-6 border-t-2 border-dashed border-orange-300">
+         <p class="text-xl md:text-2xl font-bold text-green-700">"Zero Accident Bharat ko safal banana meri zimmedari hai."</p>
+        </div>
+        <div class="mt-8 pt-6 border-t-2 border-dashed border-blue-300">
+         <p class="text-lg md:text-xl font-bold text-blue-900 mb-4">🛡️ Zero Accident Bharat:</p>
+         <p class="text-base md:text-lg leading-relaxed mb-4">"Aaj Gantantra Diwas ke pavan avsar par, tirange ko sakshi maan kar yeh shapath leta hoon ki:</p>
+         <div class="space-y-3 text-left md:text-center max-w-2xl mx-auto">
+          <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">★</span> <span>Main Bharat ki sadkon par sirf ek musafir nahi, balki ek <strong>'Rahveer'</strong> ban kar chalunga, jiski pehli zimmedari <strong>'Suraksha'</strong> hogi.</span></p>
+          <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">★</span> <span>Main hamesha <strong>road safety ke niyamon</strong> ka samman karunga aur unhe apni zindagi ka hissa banaunga.</span></p>
+          <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">★</span> <span>Main shapath leta hoon ki meri kisi bhi galti ya laparwahi se <strong>kisi parivaar ka chirag nahi bujhne dunga</strong>.</span></p>
+          <p class="flex items-start gap-3"><span class="text-orange-500 text-xl">★</span> <span>Main <strong>'Zero Accident Bharat'</strong> ke is maha-abhiyan se judkar, apne desh ki sadkon ko hamesha ke liye surakshit banane ka vachan deta hoon.</span></p>
+         </div>
+         <p class="text-base md:text-lg leading-relaxed mt-4 font-semibold text-green-700">Kyunki raste surakshit honge, tabhi toh desh surakshit hoga!"</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="py-10 md:py-16 bg-blue-900">
+     <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-8">
+       <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Fill Your Details</h3>
+       <p class="text-blue-200">Complete the form to receive your pledge certificate</p>
+      </div>
+      <form id="pledge-form" class="bg-white rounded-xl p-6 md:p-8 shadow-2xl">
+       <div class="space-y-5">
+        <div><label for="fullName" class="block text-sm font-semibold text-gray-700 mb-2"> Full Name / पूरा नाम <span class="text-red-500">*</span> </label> <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name" class="input-field w-full px-4 py-3 rounded-lg text-gray-800">
+        </div>
+        <div><label for="mobile" class="block text-sm font-semibold text-gray-700 mb-2"> Mobile Number / मोबाइल नंबर <span class="text-red-500">*</span> </label> <input type="tel" id="mobile" name="mobile" required placeholder="10-digit mobile number (start with 6-9)" pattern="[6-9][0-9]{9}" maxlength="10" class="input-field w-full px-4 py-3 rounded-lg text-gray-800" title="Mobile number must be 10 digits and start with 6, 7, 8, or 9">
+        </div>
+        <div><label for="profession" class="block text-sm font-semibold text-gray-700 mb-2"> Profession / व्यवसाय <span class="text-red-500">*</span> </label> <select id="profession" name="profession" required class="input-field w-full px-4 py-3 rounded-lg text-gray-800 bg-white"> <option value="">Select your profession</option> <option value="Driver">Driver</option> <option value="Wheel Alignment - Shop Owner">Wheel Alignment - Shop Owner</option> <option value="Mechanic">Mechanic</option> <option value="Loading / Unloading - Service Provider">Loading / Unloading - Service Provider</option> <option value="Food & Rest Points - Owner">Food & Rest Points - Owner</option> <option value="Local Doctors">Local Doctor.</option> <option value="Lawyer">Lawyer</option> </select>
+        </div>
+        <div><label for="location" class="block text-sm font-semibold text-gray-700 mb-2"> City / State <span class="text-red-500">*</span> </label> <input type="text" id="location" name="location" required placeholder="e.g., Delhi, Maharashtra" class="input-field w-full px-4 py-3 rounded-lg text-gray-800">
+        </div>
+        <div><label for="photoUpload" class="block text-sm font-semibold text-gray-700 mb-2"> Upload Your Photo <span class="text-gray-500">(Optional)</span> </label>
+         <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-orange-500 transition-colors bg-gray-50"><input type="file" id="photoUpload" name="photoUpload" accept="image/*" class="hidden"> <label for="photoUpload" class="cursor-pointer">
+           <div id="photo-preview-container" class="mb-3">
+            <div id="photo-icon" class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
+             <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+             </svg>
+            </div><img id="photo-preview" class="hidden w-32 h-32 mx-auto rounded-full object-cover border-4 border-orange-500 shadow-lg" alt="Photo preview">
+           </div><p class="text-sm text-gray-600 mb-1"><span class="text-orange-600 font-semibold">Click to upload</span> or drag and drop</p><p class="text-xs text-gray-500">PNG, JPG up to 5MB</p></label> <button type="button" id="remove-photo" class="hidden mt-4 px-4 py-2 bg-red-100 text-red-600 rounded-lg text-sm font-semibold hover:bg-red-200 transition-colors"> ✕ Remove Photo </button>
+         </div>
+        </div>
+        <div class="bg-orange-50 border-2 border-orange-300 rounded-lg p-5">
+         <div class="flex items-start gap-3"><input type="checkbox" id="agreeTerms" name="agreeTerms" required class="w-5 h-5 mt-0.5 text-orange-500 border-2 border-gray-300 rounded focus:ring-orange-500"> <label for="agreeTerms" class="text-sm text-gray-700 font-semibold"> ✓ I solemnly pledge to follow all road safety rules and commit to Zero Accident Bharat mission. <span class="text-red-500">*</span> </label>
+         </div>
+        </div>
+       </div>
+       <div class="mt-8 flex gap-3"><button type="button" onclick="goToStep(1)" class="flex-1 py-4 px-6 bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold rounded-xl transition-colors flex items-center justify-center gap-2">
+         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+         </svg> Back </button> <button type="submit" class="pledge-btn flex-2 py-4 px-8 rounded-xl text-white font-bold text-lg flex items-center justify-center gap-2"> 🛡️ Take the Pledge </button>
+       </div>
+      </form>
+     </div>
+    </section>
+    <div class="tricolor-top w-full"></div>
+   </div><!-- STEP 3: Certificate -->
+   <div id="step-3-content" class="step-content hidden">
+    <section class="py-10 md:py-16 bg-gradient-to-b from-slate-100 to-white">
+     <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-8 no-print">
+       <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+        </svg>
+       </div>
+       <h3 class="text-3xl font-bold text-blue-900 mb-2">Congratulations! 🎉</h3>
+       <p class="text-lg text-gray-600 mb-1">You've taken the Zero Accident Bharat Pledge!</p>
+       <p id="success-name" class="text-xl font-semibold text-orange-600 mb-6"></p>
+      </div>
+      <div id="certificate-to-print" class="certificate-bg rounded-lg p-6 md:p-8 shadow-2xl mx-auto" style="max-width: 1100px; width: 100%;">
+       <div class="relative z-10">
+        <div class="flex items-center justify-between mb-2 pb-2 border-b-2 border-blue-900">
+         <div class="flex flex-col items-center">
+          <div class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
+           <img src="images/Azadi-Ka-Amrit-Mahotsav-Logo.png" alt="National Emblem" class="w-10 h-10 md:w-14 md:h-14 object-contain">
+          </div>
+         </div>
+         <div class="flex flex-col items-center">
+          <div class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
+           <img src="images/DPIIT.jpeg" alt="Road Transport" class="w-10 h-10 md:w-14 md:h-14 object-contain rounded-lg shadow-md">
+          </div>
+         </div>
+         <div class="flex flex-col items-center">
+          <div class="w-14 h-14 md:w-18 md:h-18 flex items-center justify-center">
+           <img src="images/Rahveer_logo.jpeg" alt="RAHVEER Logo" class="w-14 h-14 md:w-18 md:h-18 object-contain rounded-lg shadow-lg border-2 border-yellow-500">
+          </div>
+         </div>
+         <div class="flex flex-col items-center">
+          <div class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
+           <img src="images/Road-Grip.jpeg" alt="Safety Council" class="w-10 h-10 md:w-14 md:h-14 object-contain rounded-lg shadow-md">
+          </div>
+         </div>
+         <div class="flex flex-col items-center">
+          <div class="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
+           <img src="images/Zero Accident Bharat Logo.jpeg" alt="Zero Accident Mission" class="w-10 h-10 md:w-14 md:h-14 object-contain rounded-lg shadow-md">
+          </div>
+         </div>
+        </div>
+        <div class="text-center mb-1.5">
+         <div class="inline-block px-5 py-0.5 bg-blue-900 text-white text-xs font-bold mb-0.5">
+          Road Grip Technologies
+         </div>
+         <p class="text-xs text-gray-600 font-semibold">Supported By</p>
+         <p class="text-base font-bold text-blue-900 mt-0.5">Ministry of Road Transport & Highways, Government of India</p>
+        </div>
+        <div class="tricolor-top w-full mb-2" style="height: 3px;"></div>
+        <div class="text-center mb-2">
+         <h4 class="text-2xl md:text-3xl font-extrabold text-blue-900 mb-0.5" style="letter-spacing: 1px;">ZERO ACCIDENT BHARAT</h4>
+         <p class="text-lg md:text-xl text-orange-600 font-bold tracking-wide">PLEDGE CERTIFICATE</p>
+         <p class="text-xs text-gray-600 mt-0.5 font-devanagari">शून्य दुर्घटना भारत - प्रतिज्ञा प्रमाण पत्र</p>
+        </div>
+        <div class="w-20 h-0.5 bg-gradient-to-r from-orange-500 via-blue-900 to-green-600 mx-auto mb-2"></div>
+        <div class="text-center mb-1.5">
+         <p class="text-xs font-mono text-gray-500">Certificate No: <span id="cert-number" class="font-bold text-blue-900">RAHV-2024-XXXXX</span></p>
+        </div>
+        <p class="text-center text-gray-700 mb-1.5 text-sm">This is to certify that</p>
+        <div class="flex justify-center mb-2">
+         <div id="cert-photo-container" class="relative">
+          <div id="cert-photo-placeholder" class="w-20 h-20 rounded-full bg-gradient-to-br from-blue-100 to-orange-100 border-3 border-blue-900 flex items-center justify-center shadow-lg">
+           <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+           </svg>
+          </div><img id="cert-photo-img" class="hidden w-20 h-20 rounded-full object-cover border-3 border-blue-900 shadow-lg" alt="Driver photo">
+          <div class="absolute -bottom-1 -right-1 w-7 h-7 bg-orange-600 rounded-full flex items-center justify-center border-2 border-white shadow-md">
+           <svg class="w-3.5 h-3.5 text-white" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+           </svg>
+          </div>
+         </div>
+        </div>
+        <p id="cert-name" class="text-center text-xl md:text-2xl font-bold text-blue-900 border-b-2 border-dotted border-gray-400 pb-1 mb-2 mx-auto px-8" style="max-width: 450px;">[Driver Name]</p>
+        <p class="text-center text-gray-700 max-w-2xl mx-auto mb-2 leading-relaxed text-sm">has solemnly taken the <strong>ZERO ACCIDENT BHARAT PLEDGE</strong> and commits to upholding the highest standards of road safety, protecting lives, and contributing to the nation's vision of accident-free roads for all citizens of India.</p>
+        <div class="bg-gradient-to-r from-orange-50 via-white to-green-50 rounded-lg p-2 mb-2 max-w-2xl mx-auto border-l-4 border-r-4 border-orange-500">
+         <p class="text-blue-900 font-devanagari text-center text-sm font-semibold">"
+          वाहन सुरक्षा, जीवन रक्षा"<br><span class="text-xs text-gray-600">"Vehicle Roads, Saved Lives"</span></p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-2 max-w-3xl mx-auto text-xs mb-3 bg-blue-50 p-2.5 rounded-lg border border-blue-200">
+         <div class="text-center border-r border-blue-200">
+          <p class="text-gray-500 font-semibold text-xs">Profession</p>
+          <p id="cert-vehicle" class="font-bold text-blue-900 text-xs">[Profession]</p>
+         </div>
+         <div class="text-center border-r border-blue-200">
+          <p class="text-gray-500 font-semibold text-xs">Location</p>
+          <p id="cert-location" class="font-bold text-blue-900 text-xs">[City]</p>
+         </div>
+         <div class="text-center border-r border-blue-200">
+          <p class="text-gray-500 font-semibold text-xs">Date</p>
+          <p id="cert-date" class="font-bold text-blue-900 text-xs"></p>
+         </div>
+         <div class="text-center">
+          <p class="text-gray-500 font-semibold text-xs">Status</p>
+          <p class="font-bold text-green-700 text-xs">✓ VERIFIED</p>
+         </div>
+        </div>
+        <div class="mt-3 mb-2 flex justify-center">
+         <div class="text-center">
+          <div class="mx-auto" style="width: 240px;">
+           <div class="mb-0">
+            <img src="images/sign.png" alt="Signature" class="h-28 w-full object-contain" style="min-height: 100px; max-height: 120px; display: block;">
+           </div>
+           <div class="w-full h-0.5 bg-gray-400 mb-1.5"></div>
+          </div>
+          <p class="font-bold text-blue-900 text-sm">ZERO ACCIDENT BHARAT Mission Director</p>
+          <p class="text-xs text-gray-600">Road Grip Technologies</p>
+         </div>
+        </div>
+        <div class="mt-2 pt-2 border-t border-gray-300 text-center">
+         <p class="text-xs text-gray-400 font-mono leading-tight">Issued under the authority of RAHVEER - Zero Accident Bharat Mission<br>
+           Supported By Road Grip Technologies</p>
+         <div class="flex justify-center gap-2 mt-1"> <span class="text-xs text-gray-400 font-semibold">जय हिन्द</span> 
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mt-8 flex gap-4 justify-center flex-wrap no-print">
+        <button onclick="downloadCertificate()" class="py-3 px-8 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-colors shadow-lg flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg> Download Certificate
+        </button>
+        <button onclick="goToStep(1)" class="py-3 px-8 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors shadow-lg">
+          Start Over
+        </button>
+      </div>
+      <div class="mt-6 text-center text-sm text-gray-600 no-print bg-blue-50 rounded-lg p-4 mx-auto max-w-2xl">
+        <p class="font-semibold text-blue-900 mb-1">📄 How to Save as PDF:</p>
+        <p>Click "Download Certificate" → Select "Save as PDF" or "Microsoft Print to PDF" as printer → Click Save</p>
+      </div>
+     </div>
+    </section>
+   </div><!-- Footer -->
+   <footer class="bg-blue-900 py-10 no-print">
+    <div class="max-w-4xl mx-auto px-4">
+     <div class="text-center">
+      <div class="flex justify-center gap-8 mb-6">
+       <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center">
+        <svg viewbox="0 0 40 40" class="w-6 h-6"><circle cx="20" cy="20" r="12" fill="none" stroke="#FF9933" stroke-width="2" /> <circle cx="20" cy="20" r="4" fill="#FF9933" /> <line x1="20" y1="8" x2="20" y2="16" stroke="#FF9933" stroke-width="2" /> <line x1="20" y1="24" x2="20" y2="32" stroke="#FF9933" stroke-width="2" />
+        </svg>
+       </div>
+       <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center">
+        <svg viewbox="0 0 40 40" class="w-6 h-6"><path d="M8 35 L20 5 L32 35" fill="none" stroke="#FF9933" stroke-width="2" /> <line x1="20" y1="12" x2="20" y2="18" stroke="white" stroke-width="2" /> <line x1="20" y1="24" x2="20" y2="30" stroke="white" stroke-width="2" />
+        </svg>
+       </div>
+       <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center">
+        <svg viewbox="0 0 40 40" class="w-6 h-6"><path d="M20 5 L32 10 L32 22 C32 30 20 35 20 35 C20 35 8 30 8 22 L8 10 Z" fill="none" stroke="#138808" stroke-width="2" /> <path d="M15 20 L18 23 L25 16" fill="none" stroke="#138808" stroke-width="2" />
+        </svg>
+       </div>
+      </div>
+      <p id="footer-text" class="text-white text-lg font-semibold mb-2">Rahveer – Desh ke drivers ke saath</p>
+      <p class="text-blue-300 text-sm">© 2024 RAHVEER Driver Safety Mission | Zero Accident Bharat</p>
+     </div>
+    </div>
+   </footer>
+   <div class="tricolor-top w-full"></div>
+  </div>
+  <script>
+    const defaultConfig = {
+      main_heading: 'Zero Accident Bharat – Driver Safety Pledge',
+      tagline: '"Ek Sankalp, Surakshit Bharat"',
+      button_text: 'I Take the Zero Accident Pledge',
+      footer_text: 'Rahveer – Desh ke drivers ke saath'
+    };
+    
+    let config = { ...defaultConfig };
+    let currentStep = 1;
+    let formData = {};
+    let uploadedPhoto = null;
+    
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+    document.getElementById('cert-date').textContent = formattedDate;
+    
+    function goToStep(step) {
+      document.getElementById('step-1-content').classList.add('hidden');
+      document.getElementById('step-2-content').classList.add('hidden');
+      document.getElementById('step-3-content').classList.add('hidden');
+      
+      document.getElementById(`step-${step}-content`).classList.remove('hidden');
+      
+      updateProgressIndicators(step);
+      currentStep = step;
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    function updateProgressIndicators(activeStep) {
+      for (let i = 1; i <= 3; i++) {
+        const indicator = document.getElementById(`step${i}-indicator`);
+        const text = document.getElementById(`step${i}-text`);
+        const progressBar = document.getElementById(`progress-bar-${i}`);
+        
+        if (i < activeStep) {
+          indicator.className = 'w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-lg border-4 border-green-200 transition-all';
+          indicator.innerHTML = '✓';
+          text.className = 'text-xs md:text-sm font-semibold text-green-600 mt-1 text-center';
+          if (progressBar) {
+            progressBar.className = 'w-8 md:w-20 h-1 bg-green-500 mx-1 transition-all';
+          }
+        } else if (i === activeStep) {
+          indicator.className = 'w-10 h-10 md:w-12 md:h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg border-4 border-orange-200 transition-all';
+          indicator.textContent = i;
+          text.className = 'text-xs md:text-sm font-semibold text-orange-500 mt-1 text-center';
+          if (progressBar) {
+            progressBar.className = 'w-8 md:w-20 h-1 bg-gray-300 mx-1 transition-all';
+          }
+        } else {
+          indicator.className = 'w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-300 text-gray-500 flex items-center justify-center font-bold text-lg transition-all';
+          indicator.textContent = i;
+          text.className = 'text-xs md:text-sm font-semibold text-gray-500 mt-1 text-center';
+          if (progressBar) {
+            progressBar.className = 'w-8 md:w-20 h-1 bg-gray-300 mx-1 transition-all';
+          }
+        }
+      }
+    }
+    
+    const photoUpload = document.getElementById('photoUpload');
+    const photoPreview = document.getElementById('photo-preview');
+    const photoIcon = document.getElementById('photo-icon');
+    const removePhotoBtn = document.getElementById('remove-photo');
+    
+    photoUpload.addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        if (file.size > 5 * 1024 * 1024) {
+          const message = document.createElement('div');
+          message.className = 'fixed top-20 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50';
+          message.textContent = 'File size must be less than 5MB';
+          document.body.appendChild(message);
+          setTimeout(() => message.remove(), 3000);
+          return;
+        }
+        
+        const reader = new FileReader();
+        reader.onload = function(event) {
+          uploadedPhoto = event.target.result;
+          photoPreview.src = uploadedPhoto;
+          photoPreview.classList.remove('hidden');
+          photoIcon.classList.add('hidden');
+          removePhotoBtn.classList.remove('hidden');
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+    
+    removePhotoBtn.addEventListener('click', function() {
+      photoUpload.value = '';
+      uploadedPhoto = null;
+      photoPreview.classList.add('hidden');
+      photoIcon.classList.remove('hidden');
+      removePhotoBtn.classList.add('hidden');
+    });
+    
+    document.getElementById('pledge-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+      
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<svg class="animate-spin h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Submitting...';
+      
+      try {
+        // Create FormData object
+        const formDataObj = new FormData(this);
+        
+        // Submit to backend
+        const response = await fetch('submit_form.php', {
+          method: 'POST',
+          body: formDataObj
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+          // Store data
+          formData = result.data;
+          
+          // Update certificate with backend data
+          document.getElementById('cert-name').textContent = result.data.name.toUpperCase();
+          document.getElementById('cert-vehicle').textContent = result.data.profession;
+          document.getElementById('cert-location').textContent = result.data.location;
+          document.getElementById('success-name').textContent = result.data.name;
+          document.getElementById('cert-number').textContent = result.certificate_number;
+          
+          // Handle photo from uploaded file (client-side preview)
+          if (uploadedPhoto) {
+            document.getElementById('cert-photo-img').src = uploadedPhoto;
+            document.getElementById('cert-photo-img').classList.remove('hidden');
+            document.getElementById('cert-photo-placeholder').classList.add('hidden');
+          }
+          
+          // Go to certificate page
+          goToStep(3);
+          
+        } else {
+          // Show error message
+          alert('Error: ' + result.message);
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
+        
+      } catch (error) {
+        console.error('Submission error:', error);
+        alert('An error occurred while submitting the form. Please check your internet connection and try again.');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+      }
+    });
+    
+    function downloadCertificate() {
+      // Update page title for better default PDF filename
+      const originalTitle = document.title;
+      document.title = `RAHVEER_Certificate_${formData.name.replace(/\s+/g, '_')}`;
+      
+      // Open print dialog
+      window.print();
+      
+      // Restore original title after print dialog closes
+      setTimeout(() => {
+        document.title = originalTitle;
+      }, 1000);
+    }
+    
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('RAHVEER Certificate System Ready');
+      
+      // Add smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+ </body>
+</html>
+</html>
+</html>
