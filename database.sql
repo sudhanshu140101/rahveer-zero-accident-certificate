@@ -1,11 +1,4 @@
--- RAHVEER Certificate Database Schema
--- Run this SQL in your GoDaddy phpMyAdmin to create the database structure
 
--- Create database (if not already created by GoDaddy)
--- CREATE DATABASE IF NOT EXISTS rahveer_certificate CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
--- USE rahveer_certificate;
-
--- Pledges Table - Stores all user form submissions
 CREATE TABLE IF NOT EXISTS pledges (
     id INT AUTO_INCREMENT PRIMARY KEY,
     full_name VARCHAR(255) NOT NULL,
@@ -32,8 +25,4 @@ CREATE TABLE IF NOT EXISTS admin_logs (
     INDEX idx_log_date (log_date)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Insert sample data (optional - remove in production)
--- INSERT INTO pledges (full_name, mobile, profession, location, certificate_number) 
--- VALUES 
--- ('Sample Driver', '9999999999', 'Driver', 'Delhi', 'RAHV-2024-SAM0001'),
--- ('Test User', '8888888888', 'Mechanic', 'Mumbai', 'RAHV-2024-TES0002');
+
