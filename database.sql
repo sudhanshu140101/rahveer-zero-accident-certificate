@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS pledges (
     INDEX idx_submission_date (submission_date)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Admin Activity Log (Optional - for tracking admin actions)
+
 CREATE TABLE IF NOT EXISTS admin_logs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     action VARCHAR(100) NOT NULL,
