@@ -1,11 +1,7 @@
 🛡️ RAHVEER – Zero Accident Bharat Driver Safety Pledge Certificate
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://rahveer.com/)[![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php)](https://www.php.net/)[![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql)](https://www.mysql.com/)
 A web application for the 
 **Zero Accident Bharat** driver safety mission. Users take a road safety pledge (Hindi & English), submit their details, and receive an official downloadable certificate. 
 Built with PHP, MySQL, and a responsive frontend—deployed on GoDaddy.
-## 🌐 Live Website| Page | URL ||------|-----||
-**Home / Pledge Form** | [https://rahveer.com/](https://rahveer.com/) || 
-**Admin Login** | [https://rahveer.com/admin/login.php](https://rahveer.com/admin/login.php) |
 ---## ✨ Features### 
 User-facing- 
 **3-step flow**: Introduction → Take Pledge → Certificate- 
