@@ -1,9 +1,5 @@
 <?php
-/**
- * Database Connection Test Script
- * Use this to verify your database connection after deployment
- * DELETE THIS FILE after testing for security
- */
+
 
 require_once 'config.php';
 
