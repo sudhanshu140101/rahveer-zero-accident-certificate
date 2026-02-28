@@ -18,7 +18,7 @@ User-facing-
 **View submissions**: All pledge entries in a table- **Stats**: Total pledges, today's count, active days-- 
 **Export/Print**: Bulk data export### Security- PDO prepared statements (SQL injection protection)- Input validation & sanitization- File upload checks (type, size)- Session-based admin auth- `.htaccess` protection for config and uploads---
 ## 🛠️ Tech Stack| Layer | Technology ||-------|------------|| Frontend | HTML5, CSS3, Tailwind CSS, JavaScript || Backend | PHP 7.4+ || Database | MySQL 5.7+ || Server | Apache (mod_rewrite) || Hosting | GoDaddy (self-deployed) |---
-## 📁 Project Structure
+# 📁 Project Structure
 rahveer-zero-accident-certificate/
 ├── index.html # Landing page & certificate form
 ├── submit_form.php # Form handler (validation, DB insert, certificate #)
